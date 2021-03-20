@@ -1,5 +1,7 @@
 package com.inet.code.entity.user.vo;
 
+import lombok.*;
+
 import java.util.Date;
 
 /**
@@ -7,6 +9,11 @@ import java.util.Date;
  * @author HCY
  * @since 2021/3/20 上午8:24
 */
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class RealmUser {
 
     /**

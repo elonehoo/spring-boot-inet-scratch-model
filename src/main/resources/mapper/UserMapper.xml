@@ -2,4 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.inet.code.mapper.UserMapper">
 
+    <!--
+        通过账号和密码获取用户的序号
+        Get the serial number of the user through the account and password
+    -->
+    <select id="selectByAccountAndPassword" resultType="java.lang.String">
+        SELECT
+            users.id
+        FROM tbl_user AS users,
+        LEFT JOIN tbl_cipher AS ciphers ON ciphers.user_id = users.id
+        WHERE users.account = #{account} AND ciphers.cipher=#{cipher}
+        LIMIT 1;
+    </select>
 </mapper>

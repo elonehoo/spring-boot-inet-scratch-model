@@ -4,3 +4,51 @@
 2021-03-20 09:11:42.554  WARN 1065 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
 2021-03-20 09:11:42.831  WARN 1065 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
 2021-03-20 09:11:43.187  INFO 1065 --- [main] com.inet.InetApplication                 : Started InetApplication in 7.24 seconds (JVM running for 8.646)
+2021-03-20 15:07:33.467  INFO 1973 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 1973 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-20 15:07:33.469 DEBUG 1973 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-20 15:07:33.472  INFO 1973 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-20 15:07:40.988  WARN 1973 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-20 15:07:41.472  WARN 1973 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-20 15:07:42.039  INFO 1973 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.339 seconds (JVM running for 11.709)
+2021-03-20 15:07:58.147  INFO 1977 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 1977 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-20 15:07:58.150 DEBUG 1977 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-20 15:07:58.155  INFO 1977 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-20 15:08:06.487  WARN 1977 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-20 15:08:06.931  WARN 1977 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-20 15:08:07.494  INFO 1977 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 10.427 seconds (JVM running for 13.961)
+2021-03-20 15:08:20.129  INFO 1981 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 1981 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-20 15:08:20.131 DEBUG 1981 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-20 15:08:20.135  INFO 1981 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-20 15:08:26.950  WARN 1981 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-20 15:08:27.311  WARN 1981 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-20 15:08:27.812  INFO 1981 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 8.4 seconds (JVM running for 10.927)
+2021-03-20 15:12:57.974  INFO 1992 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 1992 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-20 15:12:57.980 DEBUG 1992 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-20 15:12:57.985  INFO 1992 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-20 15:13:04.533  WARN 1992 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-20 15:13:04.900  WARN 1992 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-20 15:13:05.452  INFO 1992 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 8.371 seconds (JVM running for 11.02)
+2021-03-20 15:13:25.716  INFO 1997 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 1997 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-20 15:13:25.717 DEBUG 1997 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-20 15:13:25.720  INFO 1997 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-20 15:13:31.852  WARN 1997 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-20 15:13:32.220  WARN 1997 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-20 15:13:32.766  INFO 1997 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 7.728 seconds (JVM running for 10.353)
+2021-03-20 15:13:45.677  INFO 2001 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 2001 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-20 15:13:45.679 DEBUG 2001 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-20 15:13:45.684  INFO 2001 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-20 15:13:52.112  WARN 2001 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-20 15:13:52.496  WARN 2001 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-20 15:13:53.054  INFO 2001 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 8.031 seconds (JVM running for 10.443)
+2021-03-20 15:14:09.090  INFO 2008 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 2008 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-20 15:14:09.092 DEBUG 2008 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-20 15:14:09.094  INFO 2008 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-20 15:14:15.040  WARN 2008 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-20 15:14:15.388  WARN 2008 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-20 15:14:15.887  INFO 2008 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 7.564 seconds (JVM running for 9.757)
+2021-03-20 15:15:04.495  INFO 2012 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 2012 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-20 15:15:04.497 DEBUG 2012 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-20 15:15:04.500  INFO 2012 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-20 15:15:09.954  WARN 2012 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-20 15:15:10.285  WARN 2012 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-20 15:15:10.767  INFO 2012 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 7.067 seconds (JVM running for 9.177)
