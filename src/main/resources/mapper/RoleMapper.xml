@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inet.code.mapper.RoleMapper">
+
+    <!--通过用户主键获取到用户的序号-->
+    <select id="selectByUserId" resultType="com.inet.code.entity.role.po.Role">
+        SELECT
+            roles.id AS id,
+            roles.role_name AS roleName
+        FROM tbl_role AS roles
+        LEFT JOIN tbl_user_role AS userRole ON userRole.role_id = roles.id
+        WHERE userRole.user_id = #{userId}
+        LIMIT 1;
+    </select>
+</mapper>

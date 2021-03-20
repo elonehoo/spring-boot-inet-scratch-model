@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inet.code.mapper.PowerMapper">
+
+    <!--通过用户序号获取到用户权限集合-->
+    <select id="selectByUserId" resultType="com.inet.code.entity.power.po.Power">
+        SELECT
+            powers.id AS id,
+            powers.power_name AS powerName
+        FROM tbl_power AS powers
+        LEFT JOIN tbl_user_power AS userPower ON userPower.power_id = powers.id
+        WHERE userPower.user_id = #{userId};
+    </select>
+</mapper>

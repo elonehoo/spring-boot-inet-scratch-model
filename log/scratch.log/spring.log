@@ -1,0 +1,6 @@
+2021-03-20 09:11:37.236  INFO 1065 --- [main] com.inet.InetApplication                 : Starting InetApplication using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 1065 (/Volumes/1/JAVA/spring-boot-scratch-modle/target/classes started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-20 09:11:37.246 DEBUG 1065 --- [main] com.inet.InetApplication                 : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-20 09:11:37.247  INFO 1065 --- [main] com.inet.InetApplication                 : No active profile set, falling back to default profiles: default
+2021-03-20 09:11:42.554  WARN 1065 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-20 09:11:42.831  WARN 1065 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-20 09:11:43.187  INFO 1065 --- [main] com.inet.InetApplication                 : Started InetApplication in 7.24 seconds (JVM running for 8.646)
