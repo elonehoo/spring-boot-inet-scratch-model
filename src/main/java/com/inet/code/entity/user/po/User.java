@@ -9,6 +9,7 @@ import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 /**
@@ -20,6 +21,7 @@ import lombok.experimental.Accessors;
  * @since 2021-03-17
  */
 @Data
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("tbl_user")
@@ -84,5 +86,9 @@ public class User implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date gmtModified;
 
-
+    public User(String account, String userName, String headPortrait) {
+        this.account = account;
+        this.userName = userName;
+        this.headPortrait = headPortrait;
+    }
 }

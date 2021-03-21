@@ -2,4 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.inet.code.mapper.PictureMapper">
 
+    <!--产生随机的图片URL-->
+    <select id="selectRandomPictureUrl" resultType="java.lang.String">
+        SELECT
+            picture.photo_url
+        FROM tbl_picture AS picture
+        LIMIT #{state},1;
+    </select>
 </mapper>

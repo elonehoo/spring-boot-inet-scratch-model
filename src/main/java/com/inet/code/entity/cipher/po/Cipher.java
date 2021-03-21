@@ -9,6 +9,7 @@ import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 /**
@@ -20,6 +21,7 @@ import lombok.experimental.Accessors;
  * @since 2021-03-17
  */
 @Data
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("tbl_cipher")
@@ -59,5 +61,8 @@ public class Cipher implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date gmtModified;
 
-
+    public Cipher(String userId, String cipher) {
+        this.userId = userId;
+        this.cipher = cipher;
+    }
 }

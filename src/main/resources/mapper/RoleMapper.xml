@@ -12,4 +12,15 @@
         WHERE userRole.user_id = #{userId}
         LIMIT 1;
     </select>
+    <!--通过角色名字获取角色实体类-->
+    <select id="selectByRoleName" resultType="com.inet.code.entity.role.po.Role">
+        SELECT
+            roles.id AS id,
+            roles.role_name AS roleName,
+            roles.gmt_create AS gmtCreate,
+            roles.gmt_modified AS gmtModified
+        FROM tbl_role AS roles
+        WHERE roles.role_name = #{roleName}
+        LIMIT 1;
+    </select>
 </mapper>

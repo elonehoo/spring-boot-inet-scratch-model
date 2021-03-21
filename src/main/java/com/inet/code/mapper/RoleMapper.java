@@ -21,4 +21,15 @@ public interface RoleMapper extends BaseMapper<Role> {
      * @return com.inet.code.entity.role.po.Role
     */
     Role selectByUserId(String userId);
+
+    /**
+     * 通过角色名字获取角色实体类
+     * @author HCY
+     * @since 2021/3/21 下午5:55
+     * @param roleName: 角色名字
+     * @param roleName: Character name
+     * @return com.inet.code.entity.role.po.Role
+    */
+    Role selectByRoleName(String roleName);
+
 }

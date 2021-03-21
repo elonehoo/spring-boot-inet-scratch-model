@@ -9,6 +9,7 @@ import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 /**
@@ -20,9 +21,10 @@ import lombok.experimental.Accessors;
  * @since 2021-03-17
  */
 @Data
-@EqualsAndHashCode(callSuper = false)
+@NoArgsConstructor
 @Accessors(chain = true)
 @TableName("tbl_user_role")
+@EqualsAndHashCode(callSuper = false)
 public class UserRole implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -59,5 +61,8 @@ public class UserRole implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date gmtModified;
 
-
+    public UserRole(String userId, String roleId) {
+        this.userId = userId;
+        this.roleId = roleId;
+    }
 }

@@ -14,4 +14,21 @@
         WHERE users.account = #{account} AND ciphers.cipher=#{cipher}
         LIMIT 1;
     </select>
+
+    <!--通过账号查询查询是否重复-->
+    <select id="selectByAccount" resultType="java.lang.Integer">
+        SELECT
+            COUNT(*)
+        FROM tbl_user AS users
+        WHERE users.account = #{account}
+        LIMIT 1;
+    </select>
+    <!--通过账号查询用户序号-->
+    <select id="selectAccountByUserId" resultType="java.lang.String">
+        SELECT
+            users.id AS userId
+        FROM tbl_user AS users
+        WHERE users.account = #{account}
+        LIMIT 1;
+    </select>
 </mapper>

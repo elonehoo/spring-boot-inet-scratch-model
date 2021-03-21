@@ -25,5 +25,27 @@ public interface UserMapper extends BaseMapper<User> {
      * @return java.lang.String
     */
     String selectByAccountAndPassword(String account, String cipher);
+
+    /**
+     * 通过账号查询是否重复
+     * Check for duplication by checking the account number
+     * @author HCY
+     * @since 2021/3/21 下午4:40
+     * @param account: 账号
+     * @param account: Account number field
+     * @return java.lang.Integer
+    */
+    Integer selectByAccount(String account);
+
+    /**
+     * 通过账号查询用户序号
+     * Inquire the serial number of the user through the account
+     * @author HCY
+     * @since 2021/3/21 下午5:02
+     * @param account: 账号
+     * @param account: Account number field
+     * @return java.lang.String
+    */
+    String selectAccountByUserId(String account);
 }
 

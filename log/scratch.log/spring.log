@@ -431,3 +431,56 @@ org.apache.shiro.authc.AuthenticationException: token出现错误
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
 
+2021-03-21 13:57:03.802  INFO 3060 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3060 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-21 13:57:03.805 DEBUG 3060 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 13:57:03.807  INFO 3060 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-21 13:57:11.452  WARN 3060 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-21 13:57:11.903  WARN 3060 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-21 13:57:12.507  INFO 3060 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.635 seconds (JVM running for 12.28)
+2021-03-21 13:57:14.148 DEBUG 3060 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==>  Preparing: INSERT INTO tbl_picture ( id, photo_url, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
+2021-03-21 13:57:14.191 DEBUG 3060 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==> Parameters: 3db48991e5b687604b129be6ff73f686(String), https://ss.im5i.com/2020/11/16/3.jpg(String), 2021-03-21 13:57:13.48(Timestamp), 2021-03-21 13:57:13.48(Timestamp)
+2021-03-21 14:02:28.711  INFO 3070 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3070 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-21 14:02:28.715 DEBUG 3070 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 14:02:28.717  INFO 3070 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-21 14:02:36.056  WARN 3070 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-21 14:02:36.498  WARN 3070 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-21 14:02:37.084  INFO 3070 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.228 seconds (JVM running for 11.692)
+2021-03-21 14:02:38.698 DEBUG 3070 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==>  Preparing: INSERT INTO tbl_picture ( id, photo_url, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
+2021-03-21 14:02:38.741 DEBUG 3070 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==> Parameters: b9e1b33182c6383b0bab276f77b0a81e(String), https://ss.im5i.com/2020/11/16/3.jpg(String), 2021-03-21 14:02:37.934(Timestamp), 2021-03-21 14:02:37.934(Timestamp)
+2021-03-21 14:02:38.782 DEBUG 3070 --- [main] c.inet.code.mapper.PictureMapper.insert  : <==    Updates: 1
+2021-03-21 14:05:10.805  INFO 3081 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3081 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-21 14:05:10.808 DEBUG 3081 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 14:05:10.810  INFO 3081 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-21 14:05:18.443  WARN 3081 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-21 14:05:18.903  WARN 3081 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-21 14:05:19.473  INFO 3081 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.456 seconds (JVM running for 12.902)
+2021-03-21 14:05:20.995 DEBUG 3081 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==>  Preparing: INSERT INTO tbl_picture ( id, photo_url, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
+2021-03-21 14:05:21.035 DEBUG 3081 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==> Parameters: fa1799cb4859c8587f1412795b3299bf(String), https://ss.im5i.com/2020/11/16/2.jpg(String), 2021-03-21 14:05:20.292(Timestamp), 2021-03-21 14:05:20.292(Timestamp)
+2021-03-21 14:05:21.062 DEBUG 3081 --- [main] c.inet.code.mapper.PictureMapper.insert  : <==    Updates: 1
+2021-03-21 14:05:47.479  INFO 3087 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3087 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-21 14:05:47.489 DEBUG 3087 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 14:05:47.497  INFO 3087 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-21 14:05:55.935  WARN 3087 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-21 14:05:56.639  WARN 3087 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-21 14:05:57.260  INFO 3087 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 10.772 seconds (JVM running for 14.687)
+2021-03-21 14:05:58.801 DEBUG 3087 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==>  Preparing: INSERT INTO tbl_picture ( id, photo_url, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
+2021-03-21 14:05:58.860 DEBUG 3087 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==> Parameters: f43bd20be30b3ca127189c8b974e9b9e(String), https://ss.im5i.com/2020/11/16/1.jpg(String), 2021-03-21 14:05:58.115(Timestamp), 2021-03-21 14:05:58.115(Timestamp)
+2021-03-21 14:05:58.891 DEBUG 3087 --- [main] c.inet.code.mapper.PictureMapper.insert  : <==    Updates: 1
+2021-03-21 14:06:08.977  INFO 3092 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3092 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-21 14:06:08.981 DEBUG 3092 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 14:06:08.983  INFO 3092 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-21 14:06:16.281  WARN 3092 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-21 14:06:16.720  WARN 3092 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-21 14:06:17.404  INFO 3092 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.35 seconds (JVM running for 11.432)
+2021-03-21 14:06:18.758 DEBUG 3092 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==>  Preparing: INSERT INTO tbl_picture ( id, photo_url, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
+2021-03-21 14:06:18.815 DEBUG 3092 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==> Parameters: 4c72f306c88ee69d88c5ea21545f813a(String), https://ss.im5i.com/2020/11/16/5cdbecc5e7bce720f6f0117b.jpg(String), 2021-03-21 14:06:18.083(Timestamp), 2021-03-21 14:06:18.083(Timestamp)
+2021-03-21 14:06:18.846 DEBUG 3092 --- [main] c.inet.code.mapper.PictureMapper.insert  : <==    Updates: 1
+2021-03-21 14:26:32.996  INFO 3140 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3140 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-21 14:26:32.999 DEBUG 3140 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 14:26:33.002  INFO 3140 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-21 14:26:40.185  WARN 3140 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-21 14:26:40.655  WARN 3140 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-21 14:26:41.187  INFO 3140 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.019 seconds (JVM running for 11.617)
+2021-03-21 14:26:42.790 DEBUG 3140 --- [main] c.i.c.mapper.PictureMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM tbl_picture
+2021-03-21 14:26:42.846 DEBUG 3140 --- [main] c.i.c.mapper.PictureMapper.selectCount   : ==> Parameters: 
+2021-03-21 14:26:42.912 DEBUG 3140 --- [main] c.i.c.mapper.PictureMapper.selectCount   : <==      Total: 1
