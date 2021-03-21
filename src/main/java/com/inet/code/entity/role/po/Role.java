@@ -7,8 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 import lombok.experimental.Accessors;
 
 /**
@@ -19,10 +18,13 @@ import lombok.experimental.Accessors;
  * @author HCY
  * @since 2021-03-17
  */
-@Data
-@EqualsAndHashCode(callSuper = false)
-@Accessors(chain = true)
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
 @TableName("tbl_role")
+@Accessors(chain = true)
+@EqualsAndHashCode(callSuper = false)
 public class Role implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -53,5 +55,7 @@ public class Role implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date gmtModified;
 
-
+    public Role(String roleName) {
+        this.roleName = roleName;
+    }
 }

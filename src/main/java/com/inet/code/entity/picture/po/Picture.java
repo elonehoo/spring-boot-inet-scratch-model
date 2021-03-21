@@ -1,45 +1,37 @@
-package com.inet.code.entity.power.po;
+package com.inet.code.entity.picture.po;
 
 import com.baomidou.mybatisplus.annotation.*;
-
-import java.time.LocalDateTime;
-import java.io.Serializable;
-import java.util.Date;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 import lombok.experimental.Accessors;
 
+import java.util.Date;
+
 /**
- * <p>
- * 权限表
- * </p>
- *
+ * 默认头像表
  * @author HCY
- * @since 2021-03-17
- */
+ * @since 2021/3/21 上午10:32
+*/
 @Getter
 @Setter
 @ToString
 @NoArgsConstructor
-@TableName("tbl_power")
+@TableName("tbl_picture")
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = false)
-public class Power implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public class Picture {
 
     /**
-     * 主键序号
+     * 主键
      */
     @TableId(value = "id" , type = IdType.UUID)
     private String id;
 
     /**
-     * 权限的名字
+     * 头像
      */
-    @TableField(value = "power_name")
-    private String powerName;
+    @TableField(value = "photo_url")
+    private String photoUrl;
 
     /**
      * 创建时间
@@ -55,7 +47,4 @@ public class Power implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date gmtModified;
 
-    public Power(String powerName) {
-        this.powerName = powerName;
-    }
 }

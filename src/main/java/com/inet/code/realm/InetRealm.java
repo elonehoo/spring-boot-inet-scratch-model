@@ -92,6 +92,9 @@ public class InetRealm extends AuthorizingRealm{
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
         String token = authenticationToken.getCredentials().toString();
+        if ( ! JwtUtils.verify(token)){
+            throw new AuthenticationException("token出现错误");
+        }
         //通过解密获得账号和密码
         String userId = JwtUtils.getString(token, "userId");
         AllUserInfo userToken = (AllUserInfo) redisTemplate.opsForValue().get(token);
@@ -102,9 +105,6 @@ public class InetRealm extends AuthorizingRealm{
         }
         if (user == null){
             throw new AuthenticationException("用户不存在");
-        }
-        if ( ! JwtUtils.verify(token)){
-            throw new AuthenticationException("token出现错误");
         }
         return new SimpleAuthenticationInfo(token,token,"my_realm");
 

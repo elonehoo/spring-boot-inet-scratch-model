@@ -4,6 +4,7 @@ import com.inet.code.entity.user.dto.LoginBean;
 import com.inet.code.result.Result;
 import com.inet.code.stencil.BaseStencil;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -16,8 +17,8 @@ import javax.annotation.Resource;
 */
 @CrossOrigin
 @RestController
-@RequestMapping("/base")
 @Api(tags = {"基础模块"})
+@RequestMapping("/base")
 public class BaseController {
 
     /**
@@ -38,8 +39,9 @@ public class BaseController {
      * @param loginBean: Entity class for logging in
      * @return com.inet.code.result.Result
     */
-    @PostMapping("/login")
-    public Result login(@RequestBody LoginBean loginBean){
+    @PostMapping(value = "/login")
+    @ApiOperation(value = "登陆操作，不需要token",httpMethod="POST")
+    public Result postLogin(@RequestBody LoginBean loginBean){
         return baseStencil.inetLogin(loginBean,"/base/login");
     }
 
