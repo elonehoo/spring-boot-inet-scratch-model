@@ -1,486 +1,60 @@
-2021-03-21 09:30:02.610  INFO 2576 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 2576 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 09:30:02.617 DEBUG 2576 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 09:30:02.620  INFO 2576 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
-2021-03-21 09:30:10.797  WARN 2576 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 09:30:11.262  WARN 2576 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 09:30:11.905  INFO 2576 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 10.237 seconds (JVM running for 13.139)
-2021-03-21 09:30:13.676 DEBUG 2576 --- [main] com.inet.code.mapper.RoleMapper.insert   : ==>  Preparing: INSERT INTO tbl_role ( id, role_name, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
-2021-03-21 09:30:13.718 DEBUG 2576 --- [main] com.inet.code.mapper.RoleMapper.insert   : ==> Parameters: 65dfad0d998ba1466887287797689d8b(String), superAdministrator(String), 2021-03-21 09:30:12.906(Timestamp), 2021-03-21 09:30:12.906(Timestamp)
-2021-03-21 09:30:13.753 DEBUG 2576 --- [main] com.inet.code.mapper.RoleMapper.insert   : <==    Updates: 1
-2021-03-21 09:31:01.024  INFO 2582 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 2582 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 09:31:01.026 DEBUG 2582 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 09:31:01.029  INFO 2582 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
-2021-03-21 09:31:07.706  WARN 2582 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 09:31:08.134  WARN 2582 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 09:31:08.740  INFO 2582 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 8.517 seconds (JVM running for 10.882)
-2021-03-21 09:31:10.239 DEBUG 2582 --- [main] com.inet.code.mapper.RoleMapper.insert   : ==>  Preparing: INSERT INTO tbl_role ( id, role_name, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
-2021-03-21 09:31:10.274 DEBUG 2582 --- [main] com.inet.code.mapper.RoleMapper.insert   : ==> Parameters: a83a2109693760a71f6a0c1addba9268(String), generalAdministrator(String), 2021-03-21 09:31:09.564(Timestamp), 2021-03-21 09:31:09.564(Timestamp)
-2021-03-21 09:31:10.326 DEBUG 2582 --- [main] com.inet.code.mapper.RoleMapper.insert   : <==    Updates: 1
-2021-03-21 09:33:04.076  INFO 2589 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 2589 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 09:33:04.078 DEBUG 2589 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 09:33:04.087  INFO 2589 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
-2021-03-21 09:33:10.609  WARN 2589 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 09:33:10.961  WARN 2589 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 09:33:11.466  INFO 2589 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 8.262 seconds (JVM running for 10.536)
-2021-03-21 09:33:12.555 DEBUG 2589 --- [main] com.inet.code.mapper.RoleMapper.insert   : ==>  Preparing: INSERT INTO tbl_role ( id, role_name, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
-2021-03-21 09:33:12.593 DEBUG 2589 --- [main] com.inet.code.mapper.RoleMapper.insert   : ==> Parameters: 65848bf20510fe5e3a0302c48bf209fa(String), elementaryUser(String), 2021-03-21 09:33:11.938(Timestamp), 2021-03-21 09:33:11.938(Timestamp)
-2021-03-21 09:33:12.621 DEBUG 2589 --- [main] com.inet.code.mapper.RoleMapper.insert   : <==    Updates: 1
-2021-03-21 09:38:19.975  INFO 2606 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 2606 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 09:38:19.978 DEBUG 2606 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 09:38:19.984  INFO 2606 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
-2021-03-21 09:38:26.900  WARN 2606 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 09:38:27.273  WARN 2606 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 09:38:27.877  INFO 2606 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 8.831 seconds (JVM running for 11.155)
-2021-03-21 09:38:29.108 DEBUG 2606 --- [main] com.inet.code.mapper.PowerMapper.insert  : ==>  Preparing: INSERT INTO tbl_power ( id, power_name, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
-2021-03-21 09:38:29.148 DEBUG 2606 --- [main] com.inet.code.mapper.PowerMapper.insert  : ==> Parameters: 03728436aa57f2e36878563b22f01838(String), enroll(String), 2021-03-21 09:38:28.499(Timestamp), 2021-03-21 09:38:28.499(Timestamp)
-2021-03-21 09:38:29.170 DEBUG 2606 --- [main] com.inet.code.mapper.PowerMapper.insert  : <==    Updates: 1
-2021-03-21 10:50:58.748  INFO 2769 --- [main] com.inet.InetApplication                 : Starting InetApplication using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 2769 (/Volumes/1/JAVA/spring-boot-scratch-modle/target/classes started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 10:50:58.752 DEBUG 2769 --- [main] com.inet.InetApplication                 : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 10:50:58.753  INFO 2769 --- [main] com.inet.InetApplication                 : No active profile set, falling back to default profiles: default
-2021-03-21 10:51:04.330  WARN 2769 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 10:51:04.605  WARN 2769 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 10:51:05.005  INFO 2769 --- [main] com.inet.InetApplication                 : Started InetApplication in 7.991 seconds (JVM running for 9.677)
-2021-03-21 10:51:36.821 DEBUG 2769 --- [http-nio-6060-exec-6] c.i.code.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,account,user_name,head_portrait,introduce,gender,birthday,gmt_create,gmt_modified FROM tbl_user WHERE id=?
-2021-03-21 10:51:36.852 DEBUG 2769 --- [http-nio-6060-exec-6] c.i.code.mapper.UserMapper.selectById    : ==> Parameters: null
-2021-03-21 10:51:36.961  WARN 2769 --- [http-nio-6060-exec-6] o.a.shiro.authc.AbstractAuthenticator    : Authentication failed for token submission [com.inet.code.entity.token.JwtToken@4b47fa04].  Possible unexpected error? (Typical or expected login exceptions should extend from AuthenticationException).
-
-org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'user_name' in 'field list'
-### The error may exist in com/inet/code/mapper/UserMapper.java (best guess)
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: SELECT id,account,user_name,head_portrait,introduce,gender,birthday,gmt_create,gmt_modified FROM tbl_user WHERE id=?
-### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'user_name' in 'field list'
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'user_name' in 'field list'
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.4.jar:5.3.4]
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.4.jar:5.3.4]
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at com.sun.proxy.$Proxy71.selectOne(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:90) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.sun.proxy.$Proxy72.selectById(Unknown Source) ~[na:na]
-	at com.baomidou.mybatisplus.extension.service.IService.getById(IService.java:201) ~[mybatis-plus-extension-3.4.2.jar:3.4.2]
-	at com.inet.code.stencil.impl.UserStencilImpl.getById(UserStencilImpl.java:80) ~[classes/:na]
-	at com.inet.code.realm.InetRealm.doGetAuthenticationInfo(InetRealm.java:99) ~[classes/:na]
-	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:568) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:270) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:256) ~[shiro-core-1.3.2.jar:1.3.2]
-	at com.inet.code.filter.JwtFilter.executeLogin(JwtFilter.java:68) ~[classes/:na]
-	at com.inet.code.filter.JwtFilter.isAccessAllowed(JwtFilter.java:42) ~[classes/:na]
-	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178) ~[shiro-web-1.3.2.jar:1.3.2]
-	at com.inet.code.filter.JwtFilter.preHandle(JwtFilter.java:101) ~[classes/:na]
-	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'user_name' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.10.jar:1.1.10]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.6.jar:3.5.6]
-	at com.sun.proxy.$Proxy159.execute(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.6.jar:3.5.6]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.6.jar:3.5.6]
-	at com.sun.proxy.$Proxy157.query(Unknown Source) ~[na:na]
-	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:69) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.6.jar:3.5.6]
-	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:92) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.6.jar:3.5.6]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	... 62 common frames omitted
-
-2021-03-21 10:51:36.975 DEBUG 2769 --- [http-nio-6060-exec-6] c.i.code.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,account,user_name,head_portrait,introduce,gender,birthday,gmt_create,gmt_modified FROM tbl_user WHERE id=?
-2021-03-21 10:51:36.975 DEBUG 2769 --- [http-nio-6060-exec-6] c.i.code.mapper.UserMapper.selectById    : ==> Parameters: null
-2021-03-21 10:51:36.989  WARN 2769 --- [http-nio-6060-exec-6] o.a.shiro.authc.AbstractAuthenticator    : Authentication failed for token submission [com.inet.code.entity.token.JwtToken@70cfb046].  Possible unexpected error? (Typical or expected login exceptions should extend from AuthenticationException).
-
-org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'user_name' in 'field list'
-### The error may exist in com/inet/code/mapper/UserMapper.java (best guess)
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: SELECT id,account,user_name,head_portrait,introduce,gender,birthday,gmt_create,gmt_modified FROM tbl_user WHERE id=?
-### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'user_name' in 'field list'
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'user_name' in 'field list'
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.4.jar:5.3.4]
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.4.jar:5.3.4]
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at com.sun.proxy.$Proxy71.selectOne(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:90) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.sun.proxy.$Proxy72.selectById(Unknown Source) ~[na:na]
-	at com.baomidou.mybatisplus.extension.service.IService.getById(IService.java:201) ~[mybatis-plus-extension-3.4.2.jar:3.4.2]
-	at com.inet.code.stencil.impl.UserStencilImpl.getById(UserStencilImpl.java:80) ~[classes/:na]
-	at com.inet.code.realm.InetRealm.doGetAuthenticationInfo(InetRealm.java:99) ~[classes/:na]
-	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:568) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:270) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:256) ~[shiro-core-1.3.2.jar:1.3.2]
-	at com.inet.code.filter.JwtFilter.executeLogin(JwtFilter.java:68) ~[classes/:na]
-	at org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter.onAccessDenied(BasicHttpAuthenticationFilter.java:227) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178) ~[shiro-web-1.3.2.jar:1.3.2]
-	at com.inet.code.filter.JwtFilter.preHandle(JwtFilter.java:101) ~[classes/:na]
-	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'user_name' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.10.jar:1.1.10]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.6.jar:3.5.6]
-	at com.sun.proxy.$Proxy159.execute(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.6.jar:3.5.6]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.6.jar:3.5.6]
-	at com.sun.proxy.$Proxy157.query(Unknown Source) ~[na:na]
-	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:69) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.6.jar:3.5.6]
-	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:92) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.6.jar:3.5.6]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	... 63 common frames omitted
-
-2021-03-21 10:51:36.997 ERROR 2769 --- [http-nio-6060-exec-6] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/scratch] threw exception [org.apache.shiro.authc.AuthenticationException: Authentication failed for token submission [com.inet.code.entity.token.JwtToken@70cfb046].  Possible unexpected error? (Typical or expected login exceptions should extend from AuthenticationException).] with root cause
-
-java.sql.SQLSyntaxErrorException: Unknown column 'user_name' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.10.jar:1.1.10]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.6.jar:3.5.6]
-	at com.sun.proxy.$Proxy159.execute(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.6.jar:3.5.6]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.6.jar:3.5.6]
-	at com.sun.proxy.$Proxy157.query(Unknown Source) ~[na:na]
-	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:69) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.6.jar:3.5.6]
-	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:92) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.6.jar:3.5.6]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.6.jar:3.5.6]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at com.sun.proxy.$Proxy71.selectOne(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:90) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.4.2.jar:3.4.2]
-	at com.sun.proxy.$Proxy72.selectById(Unknown Source) ~[na:na]
-	at com.baomidou.mybatisplus.extension.service.IService.getById(IService.java:201) ~[mybatis-plus-extension-3.4.2.jar:3.4.2]
-	at com.inet.code.stencil.impl.UserStencilImpl.getById(UserStencilImpl.java:80) ~[classes/:na]
-	at com.inet.code.realm.InetRealm.doGetAuthenticationInfo(InetRealm.java:99) ~[classes/:na]
-	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:568) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:270) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:256) ~[shiro-core-1.3.2.jar:1.3.2]
-	at com.inet.code.filter.JwtFilter.executeLogin(JwtFilter.java:68) ~[classes/:na]
-	at org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter.onAccessDenied(BasicHttpAuthenticationFilter.java:227) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178) ~[shiro-web-1.3.2.jar:1.3.2]
-	at com.inet.code.filter.JwtFilter.preHandle(JwtFilter.java:101) ~[classes/:na]
-	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-
-2021-03-21 10:57:40.433  INFO 2786 --- [main] com.inet.InetApplication                 : Starting InetApplication using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 2786 (/Volumes/1/JAVA/spring-boot-scratch-modle/target/classes started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 10:57:40.436 DEBUG 2786 --- [main] com.inet.InetApplication                 : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 10:57:40.437  INFO 2786 --- [main] com.inet.InetApplication                 : No active profile set, falling back to default profiles: default
-2021-03-21 10:57:44.998  WARN 2786 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 10:57:45.234  WARN 2786 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 10:57:45.597  INFO 2786 --- [main] com.inet.InetApplication                 : Started InetApplication in 5.858 seconds (JVM running for 7.158)
-2021-03-21 10:57:51.387 ERROR 2786 --- [http-nio-6060-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/scratch] threw exception [org.apache.shiro.authc.AuthenticationException: token出现错误] with root cause
-
-org.apache.shiro.authc.AuthenticationException: token出现错误
-	at com.inet.code.realm.InetRealm.doGetAuthenticationInfo(InetRealm.java:96) ~[classes/:na]
-	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:568) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:270) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:256) ~[shiro-core-1.3.2.jar:1.3.2]
-	at com.inet.code.filter.JwtFilter.executeLogin(JwtFilter.java:68) ~[classes/:na]
-	at org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter.onAccessDenied(BasicHttpAuthenticationFilter.java:227) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178) ~[shiro-web-1.3.2.jar:1.3.2]
-	at com.inet.code.filter.JwtFilter.preHandle(JwtFilter.java:101) ~[classes/:na]
-	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.3.2.jar:1.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-
-2021-03-21 13:57:03.802  INFO 3060 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3060 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 13:57:03.805 DEBUG 3060 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 13:57:03.807  INFO 3060 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
-2021-03-21 13:57:11.452  WARN 3060 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 13:57:11.903  WARN 3060 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 13:57:12.507  INFO 3060 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.635 seconds (JVM running for 12.28)
-2021-03-21 13:57:14.148 DEBUG 3060 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==>  Preparing: INSERT INTO tbl_picture ( id, photo_url, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
-2021-03-21 13:57:14.191 DEBUG 3060 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==> Parameters: 3db48991e5b687604b129be6ff73f686(String), https://ss.im5i.com/2020/11/16/3.jpg(String), 2021-03-21 13:57:13.48(Timestamp), 2021-03-21 13:57:13.48(Timestamp)
-2021-03-21 14:02:28.711  INFO 3070 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3070 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 14:02:28.715 DEBUG 3070 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 14:02:28.717  INFO 3070 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
-2021-03-21 14:02:36.056  WARN 3070 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 14:02:36.498  WARN 3070 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 14:02:37.084  INFO 3070 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.228 seconds (JVM running for 11.692)
-2021-03-21 14:02:38.698 DEBUG 3070 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==>  Preparing: INSERT INTO tbl_picture ( id, photo_url, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
-2021-03-21 14:02:38.741 DEBUG 3070 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==> Parameters: b9e1b33182c6383b0bab276f77b0a81e(String), https://ss.im5i.com/2020/11/16/3.jpg(String), 2021-03-21 14:02:37.934(Timestamp), 2021-03-21 14:02:37.934(Timestamp)
-2021-03-21 14:02:38.782 DEBUG 3070 --- [main] c.inet.code.mapper.PictureMapper.insert  : <==    Updates: 1
-2021-03-21 14:05:10.805  INFO 3081 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3081 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 14:05:10.808 DEBUG 3081 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 14:05:10.810  INFO 3081 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
-2021-03-21 14:05:18.443  WARN 3081 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 14:05:18.903  WARN 3081 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 14:05:19.473  INFO 3081 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.456 seconds (JVM running for 12.902)
-2021-03-21 14:05:20.995 DEBUG 3081 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==>  Preparing: INSERT INTO tbl_picture ( id, photo_url, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
-2021-03-21 14:05:21.035 DEBUG 3081 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==> Parameters: fa1799cb4859c8587f1412795b3299bf(String), https://ss.im5i.com/2020/11/16/2.jpg(String), 2021-03-21 14:05:20.292(Timestamp), 2021-03-21 14:05:20.292(Timestamp)
-2021-03-21 14:05:21.062 DEBUG 3081 --- [main] c.inet.code.mapper.PictureMapper.insert  : <==    Updates: 1
-2021-03-21 14:05:47.479  INFO 3087 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3087 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 14:05:47.489 DEBUG 3087 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 14:05:47.497  INFO 3087 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
-2021-03-21 14:05:55.935  WARN 3087 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 14:05:56.639  WARN 3087 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 14:05:57.260  INFO 3087 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 10.772 seconds (JVM running for 14.687)
-2021-03-21 14:05:58.801 DEBUG 3087 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==>  Preparing: INSERT INTO tbl_picture ( id, photo_url, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
-2021-03-21 14:05:58.860 DEBUG 3087 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==> Parameters: f43bd20be30b3ca127189c8b974e9b9e(String), https://ss.im5i.com/2020/11/16/1.jpg(String), 2021-03-21 14:05:58.115(Timestamp), 2021-03-21 14:05:58.115(Timestamp)
-2021-03-21 14:05:58.891 DEBUG 3087 --- [main] c.inet.code.mapper.PictureMapper.insert  : <==    Updates: 1
-2021-03-21 14:06:08.977  INFO 3092 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3092 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 14:06:08.981 DEBUG 3092 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 14:06:08.983  INFO 3092 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
-2021-03-21 14:06:16.281  WARN 3092 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 14:06:16.720  WARN 3092 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 14:06:17.404  INFO 3092 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.35 seconds (JVM running for 11.432)
-2021-03-21 14:06:18.758 DEBUG 3092 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==>  Preparing: INSERT INTO tbl_picture ( id, photo_url, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? )
-2021-03-21 14:06:18.815 DEBUG 3092 --- [main] c.inet.code.mapper.PictureMapper.insert  : ==> Parameters: 4c72f306c88ee69d88c5ea21545f813a(String), https://ss.im5i.com/2020/11/16/5cdbecc5e7bce720f6f0117b.jpg(String), 2021-03-21 14:06:18.083(Timestamp), 2021-03-21 14:06:18.083(Timestamp)
-2021-03-21 14:06:18.846 DEBUG 3092 --- [main] c.inet.code.mapper.PictureMapper.insert  : <==    Updates: 1
-2021-03-21 14:26:32.996  INFO 3140 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 3140 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
-2021-03-21 14:26:32.999 DEBUG 3140 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
-2021-03-21 14:26:33.002  INFO 3140 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
-2021-03-21 14:26:40.185  WARN 3140 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-03-21 14:26:40.655  WARN 3140 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2021-03-21 14:26:41.187  INFO 3140 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.019 seconds (JVM running for 11.617)
-2021-03-21 14:26:42.790 DEBUG 3140 --- [main] c.i.c.mapper.PictureMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM tbl_picture
-2021-03-21 14:26:42.846 DEBUG 3140 --- [main] c.i.c.mapper.PictureMapper.selectCount   : ==> Parameters: 
-2021-03-21 14:26:42.912 DEBUG 3140 --- [main] c.i.c.mapper.PictureMapper.selectCount   : <==      Total: 1
+2021-03-22 15:57:08.651  INFO 5960 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 5960 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-22 15:57:08.661 DEBUG 5960 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-22 15:57:08.669  INFO 5960 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-22 15:57:16.529  WARN 5960 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-22 15:57:17.021  WARN 5960 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-22 15:57:17.606  INFO 5960 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.856 seconds (JVM running for 12.469)
+2021-03-22 15:57:19.340 DEBUG 5960 --- [main] c.i.c.m.S.selectPagePo_mpCount           : ==>  Preparing: SELECT COUNT(*) FROM tbl_slideshow AS slideshow
+2021-03-22 15:57:19.381 DEBUG 5960 --- [main] c.i.c.m.S.selectPagePo_mpCount           : ==> Parameters: 
+2021-03-22 15:57:19.427 DEBUG 5960 --- [main] c.i.c.m.S.selectPagePo_mpCount           : <==      Total: 1
+2021-03-22 15:59:29.364  INFO 5968 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 5968 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-22 15:59:29.366 DEBUG 5968 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-22 15:59:29.369  INFO 5968 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-22 15:59:37.333  WARN 5968 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-22 15:59:37.780  WARN 5968 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-22 15:59:38.343  INFO 5968 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.824 seconds (JVM running for 11.996)
+2021-03-22 15:59:39.810 DEBUG 5968 --- [main] c.i.c.m.S.selectPagePo_mpCount           : ==>  Preparing: SELECT COUNT(*) FROM tbl_slideshow AS slideshow
+2021-03-22 15:59:39.851 DEBUG 5968 --- [main] c.i.c.m.S.selectPagePo_mpCount           : ==> Parameters: 
+2021-03-22 15:59:39.895 DEBUG 5968 --- [main] c.i.c.m.S.selectPagePo_mpCount           : <==      Total: 1
+2021-03-22 16:00:32.155  INFO 5973 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 5973 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-22 16:00:32.156 DEBUG 5973 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-22 16:00:32.162  INFO 5973 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-22 16:00:39.020  WARN 5973 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-22 16:00:39.496  WARN 5973 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-22 16:00:40.065  INFO 5973 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 8.664 seconds (JVM running for 10.9)
+2021-03-22 16:00:41.564 DEBUG 5973 --- [main] c.i.c.m.S.selectPagePo_mpCount           : ==>  Preparing: SELECT COUNT(*) FROM tbl_slideshow AS slideshow
+2021-03-22 16:00:41.599 DEBUG 5973 --- [main] c.i.c.m.S.selectPagePo_mpCount           : ==> Parameters: 
+2021-03-22 16:00:41.645 DEBUG 5973 --- [main] c.i.c.m.S.selectPagePo_mpCount           : <==      Total: 1
+2021-03-22 16:03:15.977  INFO 5989 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 5989 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-22 16:03:15.979 DEBUG 5989 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-22 16:03:15.981  INFO 5989 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-22 16:03:23.863  WARN 5989 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-22 16:03:24.353  WARN 5989 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-22 16:03:24.978  INFO 5989 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.971 seconds (JVM running for 12.666)
+2021-03-22 16:03:26.750 DEBUG 5989 --- [main] c.i.code.mapper.SlideshowMapper.insert   : ==>  Preparing: INSERT INTO tbl_slideshow ( id, slideshow_url, slideshow_status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ? )
+2021-03-22 16:03:26.792 DEBUG 5989 --- [main] c.i.code.mapper.SlideshowMapper.insert   : ==> Parameters: 6ae9feb438d0895126adb9c008e55a79(String), https://i.im5i.com/2021/03/12/h37zn.png(String), true(Boolean), 2021-03-22 16:03:25.948(Timestamp), 2021-03-22 16:03:25.948(Timestamp)
+2021-03-22 16:03:26.822 DEBUG 5989 --- [main] c.i.code.mapper.SlideshowMapper.insert   : <==    Updates: 1
+2021-03-22 16:03:46.997  INFO 5994 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 5994 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-22 16:03:46.999 DEBUG 5994 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-22 16:03:47.002  INFO 5994 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-22 16:03:54.390  WARN 5994 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-22 16:03:54.820  WARN 5994 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-22 16:03:55.398  INFO 5994 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.161 seconds (JVM running for 11.665)
+2021-03-22 16:03:56.968 DEBUG 5994 --- [main] c.i.c.m.S.selectPagePo_mpCount           : ==>  Preparing: SELECT COUNT(*) FROM tbl_slideshow AS slideshow
+2021-03-22 16:03:57.005 DEBUG 5994 --- [main] c.i.c.m.S.selectPagePo_mpCount           : ==> Parameters: 
+2021-03-22 16:03:57.049 DEBUG 5994 --- [main] c.i.c.m.S.selectPagePo_mpCount           : <==      Total: 1
+2021-03-22 16:03:57.058 DEBUG 5994 --- [main] c.i.c.m.SlideshowMapper.selectPagePo     : ==>  Preparing: SELECT slideshow.id AS id, slideshow.slideshow_url AS slideshowUrl, slideshow.slideshow_status AS slideshowStatus, slideshow.gmt_create AS gmtCreate, slideshow.gmt_modified AS gmtModified FROM tbl_slideshow AS slideshow LIMIT ?
+2021-03-22 16:03:57.061 DEBUG 5994 --- [main] c.i.c.m.SlideshowMapper.selectPagePo     : ==> Parameters: 5(Long)
+2021-03-22 16:03:57.074 DEBUG 5994 --- [main] c.i.c.m.SlideshowMapper.selectPagePo     : <==      Total: 1
+2021-03-22 16:04:20.720  INFO 5999 --- [main] com.inet.InetApplicationTests            : Starting InetApplicationTests using Java 15.0.1 on huchengyedeMacBook-Pro.local with PID 5999 (started by huchengye in /Volumes/1/JAVA/spring-boot-scratch-modle)
+2021-03-22 16:04:20.722 DEBUG 5999 --- [main] com.inet.InetApplicationTests            : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-22 16:04:20.725  INFO 5999 --- [main] com.inet.InetApplicationTests            : No active profile set, falling back to default profiles: default
+2021-03-22 16:04:28.478  WARN 5999 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-22 16:04:29.026  WARN 5999 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-03-22 16:04:29.790  INFO 5999 --- [main] com.inet.InetApplicationTests            : Started InetApplicationTests in 9.865 seconds (JVM running for 12.16)
+2021-03-22 16:04:31.414 DEBUG 5999 --- [main] c.i.c.m.S.selectPagePo_mpCount           : ==>  Preparing: SELECT COUNT(*) FROM tbl_slideshow AS slideshow
+2021-03-22 16:04:31.457 DEBUG 5999 --- [main] c.i.c.m.S.selectPagePo_mpCount           : ==> Parameters: 
+2021-03-22 16:04:31.508 DEBUG 5999 --- [main] c.i.c.m.S.selectPagePo_mpCount           : <==      Total: 1
+2021-03-22 16:04:31.516 DEBUG 5999 --- [main] c.i.c.m.SlideshowMapper.selectPagePo     : ==>  Preparing: SELECT slideshow.id AS id, slideshow.slideshow_url AS slideshowUrl, slideshow.slideshow_status AS slideshowStatus, slideshow.gmt_create AS gmtCreate, slideshow.gmt_modified AS gmtModified FROM tbl_slideshow AS slideshow LIMIT ?
+2021-03-22 16:04:31.517 DEBUG 5999 --- [main] c.i.c.m.SlideshowMapper.selectPagePo     : ==> Parameters: 5(Long)
+2021-03-22 16:04:31.532 DEBUG 5999 --- [main] c.i.c.m.SlideshowMapper.selectPagePo     : <==      Total: 1

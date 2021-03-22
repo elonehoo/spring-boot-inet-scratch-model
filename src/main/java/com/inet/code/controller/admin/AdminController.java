@@ -38,4 +38,24 @@ public class AdminController {
     public Result postEnroll(@RequestBody EnrollBean enrollBean){
         return adminStencil.enroll(enrollBean,"/admin/enroll");
     }
+
+
+    /**
+     * 查看轮播图
+     * Check out the rotation chart
+     * @author HCY
+     * @since 2021/3/22 下午1:39
+     * @param current: 页数
+     * @param current: Number of pages
+     * @param size: 条目数
+     * @param size: Number of entries
+     * @return com.inet.code.result.Result
+    */
+    @GetMapping("/slideshow")
+    @RequiresRoles(logical = Logical.OR,value = {"superAdministrator","generalAdministrator"})
+    @RequiresPermissions(logical = Logical.AND, value = {"slideshow"})
+    public Result getSlideshow(@RequestParam(value = "current",defaultValue = "1") Integer current,
+                               @RequestParam(value = "size",defaultValue = "10") Integer size){
+        return adminStencil.getSlideshow(current,size,"/slideshow");
+    }
 }

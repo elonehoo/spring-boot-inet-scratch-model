@@ -2,4 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.inet.code.mapper.SlideshowMapper">
 
+    <!--分页查看轮播图-->
+    <select id="selectPagePo" resultType="com.inet.code.entity.slideshow.po.Slideshow">
+        SELECT
+            slideshow.id AS id,
+            slideshow.slideshow_url AS slideshowUrl,
+            slideshow.slideshow_status AS slideshowStatus,
+            slideshow.gmt_create AS gmtCreate,
+            slideshow.gmt_modified AS gmtModified
+        FROM
+        tbl_slideshow AS slideshow
+    </select>
 </mapper>
