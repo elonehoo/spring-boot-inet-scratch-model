@@ -1,5 +1,7 @@
 package com.inet.code.entity.user.dto;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
 /**
@@ -13,10 +15,12 @@ import lombok.*;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
+@ApiModel("注册的实体类")
 public class EnrollBean {
     /**
-     * 账号
+     * 用户名
      */
+    @ApiModelProperty("用户名")
     private String userName;
 
 }

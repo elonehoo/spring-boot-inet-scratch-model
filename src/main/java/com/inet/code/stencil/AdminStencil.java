@@ -1,5 +1,6 @@
 package com.inet.code.stencil;
 
+import com.inet.code.entity.slideshow.dto.SlideshowBean;
 import com.inet.code.entity.user.dto.EnrollBean;
 import com.inet.code.result.Result;
 
@@ -37,4 +38,30 @@ public interface AdminStencil {
      * @return com.inet.code.result.Result
     */
     Result getSlideshow(Integer current, Integer size, String path);
+
+    /**
+     * 通过轮播图序号删除轮播图
+     * Delete the rotation map by the rotation map serial number
+     * @author HCY
+     * @since 2021/3/23 上午9:02
+     * @param id: 轮播图序号
+     * @param id: Rotate the map sequence number
+     * @param path: URL路径
+     * @param path: The URL path
+     * @return com.inet.code.result.Result
+    */
+    Result deleteSlideshow(String id, String path);
+
+    /**
+     * 通过轮播图的序号修改轮播图的状态
+     * Modify the state of the carousel by its serial number
+     * @author HCY
+     * @since 2021/3/23 上午9:55
+     * @param slideshowBean: 轮播图的序号实体类 --> [序号]
+     * @param slideshowBean: Ordinal Entity Class of Rotating Graph --> [Ordinal]
+     * @param path: URL路径
+     * @param path: The URL path
+     * @return com.inet.code.result.Result
+    */
+    Result putSlideshow(SlideshowBean slideshowBean, String path);
 }

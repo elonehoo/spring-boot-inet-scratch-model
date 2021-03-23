@@ -4,9 +4,9 @@ import cn.hutool.core.lang.Validator;
 import cn.hutool.crypto.SecureUtil;
 import cn.hutool.crypto.symmetric.SymmetricCrypto;
 import cn.hutool.extra.pinyin.PinyinUtil;
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.inet.code.entity.cipher.po.Cipher;
+import com.inet.code.entity.slideshow.dto.SlideshowBean;
 import com.inet.code.entity.slideshow.po.Slideshow;
 import com.inet.code.entity.user.dto.EnrollBean;
 import com.inet.code.entity.user.po.User;
@@ -144,5 +144,53 @@ public class AdminStencilImpl implements AdminStencil {
         return new Result().result200(
                  slideshowService.pageSlideshow(new Page<>(current,size))
                 ,path);
+    }
+
+    /**
+     * 通过轮播图序号删除轮播图
+     * Delete the rotation map by the rotation map serial number
+     * @author HCY
+     * @since 2021/3/23 上午9:02
+     * @param id: 轮播图序号
+     * @param id: Rotate the map sequence number
+     * @param path: URL路径
+     * @param path: The URL path
+     * @return com.inet.code.result.Result
+     */
+    @Override
+    public Result deleteSlideshow(String id, String path) {
+        //删除操作
+        if (slideshowService.removeById(id)) {
+            //删除成功
+            return new Result().result200("删除成功",path);
+        }
+        //删除失败
+        return new Result().result500("删除失败",path);
+    }
+
+    /**
+     * 通过轮播图的序号修改轮播图的状态
+     * Modify the state of the carousel by its serial number
+     * @author HCY
+     * @since 2021/3/23 上午9:55
+     * @param slideshowBean: 轮播图的序号实体类 --> [序号]
+     * @param slideshowBean: Ordinal Entity Class of Rotating Graph --> [Ordinal]
+     * @param path: URL路径
+     * @param path: The URL path
+     * @return com.inet.code.result.Result
+     */
+    @Override
+    public Result putSlideshow(SlideshowBean slideshowBean, String path) {
+        //通过序号获取到轮播图的实体类
+        Slideshow slideshow = slideshowService.getById(slideshowBean.getId());
+        //进行轮播图的修改
+        slideshow.setSlideshowStatus(!slideshow.getSlideshowStatus());
+        //进行修改
+        if (slideshowService.updateById(slideshow)) {
+            //修改成功
+            return new Result().result200("修改成功",path);
+        }
+        //修改失败
+        return new Result().result500("修改失败",path);
     }
 }

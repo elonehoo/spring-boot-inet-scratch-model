@@ -5,6 +5,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 /**
@@ -16,13 +18,13 @@ import java.util.UUID;
 public class FileUtils {
 
     /**
-    * sb3文件上传的路径
+    * 图片上传
     * @author HCY
     * @since 2020/11/22 下午 12:12
     */
-    public static final String UPLOAD_REST_FILE_PATH = "/home/inet/softs/tomcat/apache-tomcat-9.0.44/webapps/images";
+    public static final String UPLOAD_REST_FILE_PATH = "/home/inet/softs/tomcat/apache-tomcat-9.0.44/webapps/bo-code-images/";
 
-    public static final String REST_URL = "http://47.99.145.161:8080/images/";
+    public static final String REST_URL = "http://47.99.145.161:8080/bo-code-images/";
 
     /**
     * 上传文件
@@ -45,16 +47,20 @@ public class FileUtils {
         String url = FileUtils.REST_URL;
         //设置新的文件名字
         fileName = UUID.randomUUID().toString() + suffixName;
-        File dest = new File(path + "/" + fileName);
+        File dest = new File(path + fileName);
         if (!dest.getParentFile().exists()) {
             dest.getParentFile().mkdirs();
         }
         //判断是否上传成功
         String network = null;
         try {
+            //设置返回值
+            Map<String, String> map = new HashMap<>(2);
+            map.put("info","上传成功");
             file.transferTo(dest);
             network = url + fileName;
-            return new Result().result200(network,pathUrl);
+            map.put("url",network);
+            return new Result().result200(map,pathUrl);
         } catch (IOException e) {
             e.printStackTrace();
         }
