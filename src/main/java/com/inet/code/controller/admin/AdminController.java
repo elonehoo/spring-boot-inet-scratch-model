@@ -1,5 +1,6 @@
 package com.inet.code.controller.admin;
 
+import com.inet.code.entity.slideshow.dto.AmendSlideshowBean;
 import com.inet.code.entity.slideshow.dto.SlideshowBean;
 import com.inet.code.entity.user.dto.EnrollBean;
 import com.inet.code.result.Result;
@@ -46,9 +47,9 @@ public class AdminController {
      * @return com.inet.code.result.Result
     */
     @PostMapping(value = "/enroll")
-    @ApiOperation(value = "注册操作，需要 --> [超级管理员、普通管理员] -- [注册权限]",httpMethod="POST")
     @RequiresPermissions(logical = Logical.AND, value = {"enroll"})
     @RequiresRoles(logical = Logical.OR,value = {"superAdministrator","generalAdministrator"})
+    @ApiOperation(value = "注册操作，需要 --> [超级管理员、普通管理员] -- [注册权限]",httpMethod="POST")
     public Result postEnroll(@RequestBody EnrollBean enrollBean){
         return adminStencil.enroll(enrollBean,"/admin/enroll");
     }
@@ -65,6 +66,7 @@ public class AdminController {
      * @return com.inet.code.result.Result
     */
     @GetMapping("/slideshow")
+    @ApiOperation(value = "查看轮播图",httpMethod="GET")
     @RequiresRoles(logical = Logical.OR,value = {"superAdministrator","generalAdministrator"})
     @RequiresPermissions(logical = Logical.AND, value = {"slideshow"})
     public Result getSlideshow(@RequestParam(value = "current",defaultValue = "1") Integer current,
@@ -82,8 +84,9 @@ public class AdminController {
      * @return com.inet.code.result.Result
     */
     @DeleteMapping("/slideshow")
-    @RequiresRoles(logical = Logical.OR,value = {"superAdministrator"})
+    @ApiOperation(value = "通过轮播图序号进行删除",httpMethod="DELETE")
     @RequiresPermissions(logical = Logical.AND, value = {"slideshow"})
+    @RequiresRoles(logical = Logical.OR,value = {"superAdministrator"})
     public Result deleteSlideshow(@RequestParam(value = "id",defaultValue = "") String id){
         return adminStencil.deleteSlideshow(id,"/admin/slideshow");
     }
@@ -98,15 +101,16 @@ public class AdminController {
      * @return com.inet.code.result.Result
     */
     @PutMapping("/slideshow")
-    @RequiresRoles(logical = Logical.OR,value = {"superAdministrator","generalAdministrator"})
     @RequiresPermissions(logical = Logical.AND, value = {"slideshow"})
+    @ApiOperation(value = "通过轮播图的序号进行修改轮播图的上架和下架",httpMethod="PUT")
+    @RequiresRoles(logical = Logical.OR,value = {"superAdministrator","generalAdministrator"})
     public Result putSlideshow(@RequestBody SlideshowBean slideshowBean){
         return adminStencil.putSlideshow(slideshowBean,"/admin/slideshow");
     }
 
     /**
-     * 上传轮播图
-     * Upload the rotation map
+     * 上传轮播图 --> 获取url
+     * Upload the rotation map --> Access to the url
      * @author HCY
      * @since 2021/3/23 上午11:10
      * @param file: 文件
@@ -114,8 +118,28 @@ public class AdminController {
      * @return com.inet.code.result.Result
     */
     @PostMapping("/slideshow")
+    @ApiOperation(value = "上传轮播图--> 获取url",httpMethod="POST")
+    @RequiresPermissions(logical = Logical.AND, value = {"slideshow"})
+    @RequiresRoles(logical = Logical.OR,value = {"superAdministrator","generalAdministrator"})
     public Result postSlideshow(@RequestParam MultipartFile file){
         return FileUtils.getUploading(file,"/admin/slideshow");
+    }
+
+    /**
+     * 保存轮播图，设置保存为未发布
+     * Save the rotary-cast image and set it to Save Unpublished
+     * @author HCY
+     * @since 2021/3/27 上午11:39
+     * @param amendSlideshowBean: 添加轮播图的实体类 --> [轮播图的URL]
+     * @param amendSlideshowBean: Add the entity class of the rotated graph --> [URL of the rotated graph]
+     * @return com.inet.code.result.Result
+    */
+    @PostMapping("/amendSlideshow")
+    @ApiOperation(value = "保存轮播图，设置保存为未发布",httpMethod="POST")
+    @RequiresPermissions(logical = Logical.AND, value = {"slideshow"})
+    @RequiresRoles(logical = Logical.OR,value = {"superAdministrator","generalAdministrator"})
+    public Result postAmendSlideshow(@RequestBody AmendSlideshowBean amendSlideshowBean){
+        return adminStencil.amendSlideshow(amendSlideshowBean,"/amendSlideshow");
     }
 
 }

@@ -6,6 +6,7 @@ import cn.hutool.crypto.symmetric.SymmetricCrypto;
 import cn.hutool.extra.pinyin.PinyinUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.inet.code.entity.cipher.po.Cipher;
+import com.inet.code.entity.slideshow.dto.AmendSlideshowBean;
 import com.inet.code.entity.slideshow.dto.SlideshowBean;
 import com.inet.code.entity.slideshow.po.Slideshow;
 import com.inet.code.entity.user.dto.EnrollBean;
@@ -158,6 +159,7 @@ public class AdminStencilImpl implements AdminStencil {
      * @return com.inet.code.result.Result
      */
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public Result deleteSlideshow(String id, String path) {
         //删除操作
         if (slideshowService.removeById(id)) {
@@ -180,6 +182,7 @@ public class AdminStencilImpl implements AdminStencil {
      * @return com.inet.code.result.Result
      */
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public Result putSlideshow(SlideshowBean slideshowBean, String path) {
         //通过序号获取到轮播图的实体类
         Slideshow slideshow = slideshowService.getById(slideshowBean.getId());
@@ -192,5 +195,25 @@ public class AdminStencilImpl implements AdminStencil {
         }
         //修改失败
         return new Result().result500("修改失败",path);
+    }
+
+    /**
+     * 保存轮播图
+     * Save the rotation map
+     * @author HCY
+     * @since 2021/3/27 上午11:33
+     * @param amendSlideshowBean: 添加轮播图的实体类 --> [轮播图的URL]
+     * @param amendSlideshowBean: Add the entity class of the rotated graph --> [URL of the rotated graph]
+     * @param path: URL路径
+     * @param path: The URL path
+     * @return com.inet.code.result.Result
+     */
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public Result amendSlideshow(AmendSlideshowBean amendSlideshowBean, String path) {
+        if (slideshowService.save(new Slideshow(amendSlideshowBean.getSlideshowUrl(),false))) {
+            return new Result().result200("保存轮播图成功",path);
+        }
+        return new Result().result500("保存轮播图失败",path);
     }
 }

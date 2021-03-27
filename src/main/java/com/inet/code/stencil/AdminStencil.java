@@ -1,5 +1,6 @@
 package com.inet.code.stencil;
 
+import com.inet.code.entity.slideshow.dto.AmendSlideshowBean;
 import com.inet.code.entity.slideshow.dto.SlideshowBean;
 import com.inet.code.entity.user.dto.EnrollBean;
 import com.inet.code.result.Result;
@@ -64,4 +65,17 @@ public interface AdminStencil {
      * @return com.inet.code.result.Result
     */
     Result putSlideshow(SlideshowBean slideshowBean, String path);
+
+    /**
+     * 保存轮播图
+     * Save the rotation map
+     * @author HCY
+     * @since 2021/3/27 上午11:33
+     * @param amendSlideshowBean: 添加轮播图的实体类 --> [轮播图的URL]
+     * @param amendSlideshowBean: Add the entity class of the rotated graph --> [URL of the rotated graph]
+     * @param path: URL路径
+     * @param path: The URL path
+     * @return com.inet.code.result.Result
+    */
+    Result amendSlideshow(AmendSlideshowBean amendSlideshowBean, String path);
 }
