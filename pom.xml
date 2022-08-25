@@ -68,7 +68,7 @@
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>swagger-bootstrap-ui</artifactId>
-            <version>1.9.3</version>
+            <version>1.9.6</version>
         </dependency>
         <!--配置jar包-->
         <dependency>
